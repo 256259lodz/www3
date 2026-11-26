@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Płuciennik">
+    <meta name="description" content="Pszczele ABC – gatunki pszczół, dzicy zapylacze oraz przewijana lista roślin miododajnych.">
+    <meta name="keywords" content="pszczoła miodna, murarka, trzmiele, rośliny miododajne, zapylacze">
+    <title>Pszczele ABC – Mała Wikipedia o Pszczołach</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <div class="brand">
+                <a href="index.html" class="logo">🐝 Pszczele ABC</a>
+                <p class="slogan">Poznaj świat pszczół miodnych, samotnic i trzmieli</p>
+            </div>
+
+            <button id="menu-toggle" aria-label="Otwórz lub zamknij menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="index.html" class="nav-link">Główna</a></li>
+            <li><a href="site1.html" class="nav-link active">Pszczoły (Wikipedia)</a></li>
+            <li><a href="site2.html" class="nav-link">Hodowla i Galeria</a></li>
+            <li><a href="site3.html" class="nav-link">Formalności i Mapa</a></li>
+            <li><a href="site4.html" class="nav-link">Bezpieczeństwo i Wykresy</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <section class="card">
+            <h1 class="sekcja-tytul">Kim są te niezwykłe owady?</h1>
+            <p class="sekcja-opis">
+                W Polsce występuje ponad 470 gatunków pszczół, a pszczoła miodna to zaledwie jeden z nich. Zdecydowaną większość stanowią łagodne pszczoły samotnice oraz trzmiele, które nie tworzą dużych rojów i niezwykle skutecznie zapylają zarówno uprawy sadownicze, jak i dziką florę.
+            </p>
+        </section>
+
+        <main class="kolumny">
+            <section class="card kolumna">
+                <img src="assets/img/pszczola-miodna.jpg" alt="Pszczoła miodna zbierająca pyłek">
+                <h2>1. Pszczoła miodna</h2>
+                <p>
+                    <strong>Gatunek społeczny</strong><br>
+                    Żyje w zorganizowanych rodzinach liczących latem od 40 do 80 tysięcy osobników: jednej matki, kilkuset trutni i tysięcy robotnic. Porozumiewa się za pomocą słynnego tańca wywijanego, wskazując kierunek i odległość do pożytku.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/murarka.jpg" alt="Murarka ogrodowa w trzcinie">
+                <h2>2. Pszczoły samotnice</h2>
+                <p>
+                    <strong>Cisi bohaterowie (np. murarka)</strong><br>
+                    Każda samica samodzielnie zakłada gniazdo w pustych łodygach roślin, glinianych skarpach lub w ziemi. Nie bronią zapasów miodu, dlatego są wyjątkowo łagodne i nie stanowią zagrożenia dla dzieci w przydomowym ogrodzie.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/trzmiel.jpg" alt="Trzmiel ziemny na kwiatach koniczyny">
+                <h2>3. Trzmiele i inni zapylacze</h2>
+                <p>
+                    <strong>Zapylacze do zadań specjalnych</strong><br>
+                    Dzięki gęstemu owłosieniu i zdolności do rozgrzewania mięśni lotnych trzmiele latają w niższych temperaturach niż pszczoły miodne. Stosują zapylanie wibracyjne, niezastąpione m.in. przy uprawie pomidorów i borówek.
+                </p>
+            </section>
+        </main>
+
+        <!-- Przewijana lista obiektów -->
+        <section class="card">
+            <h2 class="sekcja-tytul">Katalog 16 roślin miododajnych (przewijana lista)</h2>
+            <p class="sekcja-opis">
+                Użyj przycisków poniżej, aby przeglądać polecane gatunki roślin zapewniające nektar i pyłek przez cały sezon:
+            </p>
+
+            <ul id="listaRoslin" class="przewijana-lista">
+                <li><strong>Wierzba iwa</strong> – kwitnie III–IV, kluczowy pierwszy pyłek po zimie.</li>
+                <li><strong>Krokus wiosenny</strong> – kwitnie III–IV, doskonały na trawniki i rabaty.</li>
+                <li><strong>Mniszek lekarski</strong> – kwitnie IV–V, bardzo bogaty w pyłek i nektar.</li>
+                <li><strong>Jabłoń domowa</strong> – kwitnie IV–V, intensywny wiosenny pożytek sadowniczy.</li>
+                <li><strong>Rzepak ozimy</strong> – kwitnie V, jeden z głównych pożytków towarowych w Polsce.</li>
+                <li><strong>Robinia akacjowa</strong> – kwitnie V–VI, daje jasny, wolno krystalizujący miód.</li>
+                <li><strong>Facelia błękitna</strong> – kwitnie VI–VIII, rekordzistka pod względem wydajności miodowej.</li>
+                <li><strong>Malina właściwa</strong> – kwitnie V–VII, chętnie odwiedzana przez pszczoły i trzmiele.</li>
+                <li><strong>Lipa drobnolistna</strong> – kwitnie VI–VII, źródło aromatycznego miodu lipowego.</li>
+                <li><strong>Lawenda wąskolistna</strong> – kwitnie VI–VIII, idealna na słoneczne balkony i rabaty.</li>
+                <li><strong>Kocimiętka Faassena</strong> – kwitnie V–IX, długo kwitnąca bylina odporna na suszę.</li>
+                <li><strong>Koniczyna biała</strong> – kwitnie V–IX, cenny element niskich łąk kwietnych.</li>
+                <li><strong>Gryka zwyczajna</strong> – kwitnie VII–VIII, daje ciemny miód o wyrazistym smaku.</li>
+                <li><strong>Jeżówka purpurowa</strong> – kwitnie VII–IX, przyciąga pszczoły, trzmiele i motyle.</li>
+                <li><strong>Wrzos zwyczajny</strong> – kwitnie VIII–X, cenny późnoletni pożytek leśny.</li>
+                <li><strong>Bluszcz pospolity</strong> – kwitnie IX–X, ostatni naturalny posiłek przed zimą.</li>
+            </ul>
+
+            <div class="przyciski-wiersz">
+                <button id="btnDol" class="btn">⬇ Przewiń w dół</button>
+                <button id="btnGora" class="btn btn-eco">⬆ Przewiń na górę</button>
+            </div>
+        </section>
+
+        <section class="card card-highlight">
+            <h2 class="sekcja-tytul">Czy wiesz, że...? – Niesamowite pszczele fakty</h2>
+            <ul class="lista-faktow">
+                <li>Aby zebrać 1 kilogram miodu, pszczoły muszą odwiedzić około 4 milionów kwiatów i pokonać dystans przekraczający trzykrotnie obwód Ziemi.</li>
+                <li>Jedna pszczoła robotnica przez całe swoje letnie życie (ok. 5–6 tygodni) produkuje zaledwie około 1/12 łyżeczki miodu.</li>
+                <li>Pszczoły widzą światło ultrafioletowe, dzięki czemu na płatkach kwiatów dostrzegają niewidoczne dla człowieka „wskaźniki nektaru”.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-kontakt">
+                <li><strong>Adres:</strong> ul. Miodowa 12, 40-001 Katowice</li>
+                <li><strong>E-mail:</strong> <a href="mailto:kontakt@ochronapszczol.pl">kontakt@ochronapszczol.pl</a></li>
+            </ul>
+            <div class="copyright">© 2026 Ochrona Pszczół – Projekt edukacyjny</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

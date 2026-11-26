@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Płuciennik">
+    <meta name="description" content="Serwis edukacyjny o ochronie pszczół, zapylaczach, pasiekach i ekologii.">
+    <meta name="keywords" content="ochrona pszczół, pszczoły, zapylacze, pasieka, ekologia, rośliny miododajne">
+    <title>Ochrona Pszczół – Małe skrzydła, wielka misja</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <div class="brand">
+                <a href="index.html" class="logo">🐝 Małe skrzydła, wielka misja</a>
+                <p class="slogan">Ochrona pszczół i dzikich zapylaczy w trosce o przyszłość planety</p>
+            </div>
+
+            <button id="menu-toggle" aria-label="Otwórz lub zamknij menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="index.html" class="nav-link active">Główna</a></li>
+            <li><a href="site1.html" class="nav-link">Pszczoły (Wikipedia)</a></li>
+            <li><a href="site2.html" class="nav-link">Hodowla i Galeria</a></li>
+            <li><a href="site3.html" class="nav-link">Formalności i Mapa</a></li>
+            <li><a href="site4.html" class="nav-link">Bezpieczeństwo i Wykresy</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <section class="card card-highlight">
+            <img src="assets/img/baner.jpg" alt="Pszczoła na kwitnącej łące" class="baner-img">
+            <h1 class="sekcja-tytul">Co trzecia łyżka pokarmu na naszym stole zależy od owadów zapylających</h1>
+            <p class="sekcja-opis">
+                Owady zapylające odpowiadają za zapylanie blisko 75% gatunków roślin uprawnych na świecie, w tym jabłoni, truskawek, malin, rzepaku i warzyw. Bez ich codziennej pracy bioróżnorodność łąk oraz bezpieczeństwo żywnościowe byłyby poważnie zagrożone.
+            </p>
+            <button id="otworzModal" class="btn btn-eco">🌼 Jak pomóc pszczołom już dziś?</button>
+        </section>
+
+        <main class="kolumny">
+            <section class="card kolumna">
+                <img src="assets/img/ekosystem.jpg" alt="Rola pszczół w ekosystemie">
+                <h2>1. Rola w ekosystemie</h2>
+                <p>
+                    <strong>Dlaczego trzeba je chronić?</strong><br>
+                    Pszczoły miodne i dzikie pszczoły samotnice utrzymują równowagę w przyrodzie. Zapylają dziko rosnące rośliny, które stanowią bazę pokarmową dla ptaków i drobnych ssaków, a jednocześnie zwiększają plony i jakość owoców w sadach.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/nawyki.jpg" alt="Codzienne nawyki wspierające owady">
+                <h2>2. Codzienne nawyki</h2>
+                <p>
+                    <strong>Jak pomagać na co dzień?</strong><br>
+                    Wystarczy ograniczyć częste koszenie trawnika, zrezygnować z chemicznych oprysków w ogrodzie i wystawić latem płytkie poidełko z wodą oraz kamyczkami, po których owady bezpiecznie się napiją bez ryzyka utonięcia.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/ogrod.jpg" alt="Ogród przyjazny pszczołom">
+                <h2>3. Ogród przyjazny pszczołom</h2>
+                <p>
+                    <strong>Co siać i budować?</strong><br>
+                    Wybieraj gatunki kwitnące od wczesnej wiosny aż do jesieni: krokusy, lawendę, kocimiętkę, szałwię, facelię i wrzosy. Warto też zawiesić w słonecznym miejscu domek dla murarek z nawierconego drewna lub trzciny.
+                </p>
+            </section>
+        </main>
+
+        <section class="card">
+            <h2 class="sekcja-tytul">Miodowe wybory – jak kupować odpowiedzialnie?</h2>
+            <div class="flex-sekcje">
+                <div>
+                    <h3>Dobre praktyki zakupowe</h3>
+                    <p>
+                        Wybieraj miód z lokalnych, zarejestrowanych pasiek zamiast mieszanek niewiadomego pochodzenia. Zwracaj uwagę na etykietę z numerem weterynaryjnym (WNI) oraz naturalny proces krystalizacji, który świadczy o wysokiej jakości miodu.
+                    </p>
+                </div>
+                <div>
+                    <h3>Skarby z ula</h3>
+                    <p>
+                        Pszczoły dostarczają nie tylko miód, ale również pyłek kwiatowy, pierzgę, propolis (kit pszczeli) oraz wosk. Wspierając etyczne pszczelarstwo, pomagasz utrzymać zdrowe i silne rodziny pszczele w swoim regionie.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="sekcja-tytul">Źródła informacji</h2>
+            <p class="sekcja-opis">Materiały merytoryczne przygotowano w oparciu o opracowania naukowe i instytucjonalne:</p>
+            <ul class="zrodla-lista">
+                <li><a href="https://www.inhort.pl/" target="_blank" rel="noopener">Instytut Ogrodnictwa – PIB, Zakład Pszczelnictwa w Puławach</a></li>
+                <li><a href="https://pzp.biz.pl/" target="_blank" rel="noopener">Polski Związek Pszczelarski – baza wiedzy o pszczelarstwie</a></li>
+                <li><a href="https://www.wetgiw.gov.pl/" target="_blank" rel="noopener">Główny Inspektorat Weterynarii – przepisy dotyczące pasiek i RHD</a></li>
+                <li><a href="https://www.fao.org/pollination/en/" target="_blank" rel="noopener">FAO – Global Action on Pollination Services for Sustainable Agriculture</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="modalOkno" class="modal-tlo" role="dialog" aria-modal="true" aria-labelledby="modalTytul">
+        <div class="modal-okno">
+            <button id="zamknijModal" class="modal-zamknij" aria-label="Zamknij okno">×</button>
+            <h2 id="modalTytul" class="sekcja-tytul">5 prostych kroków dla pszczół</h2>
+            <p class="sekcja-opis">Nawet mały balkon w mieście może stać się bezpieczną stołówką dla zapylaczy:</p>
+            <ul>
+                <li>Posadź w doniczkach lawendę, tymianek, miętę lub aksamitki.</li>
+                <li>W upalne dni wystaw spodek z wodą i kamykami jako poidełko.</li>
+                <li>Nie używaj chemicznych środków ochrony roślin w godzinach lotu owadów.</li>
+                <li>Zostaw fragment niekoszonej trawy z koniczyną i mniszkiem.</li>
+                <li>Kupuj miód bezpośrednio od lokalnych pszczelarzy.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-kontakt">
+                <li><strong>Adres:</strong> ul. Miodowa 12, 40-001 Katowice</li>
+                <li><strong>E-mail:</strong> <a href="mailto:kontakt@ochronapszczol.pl">kontakt@ochronapszczol.pl</a></li>
+            </ul>
+            <div class="copyright">© 2026 Ochrona Pszczół – Projekt edukacyjny</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

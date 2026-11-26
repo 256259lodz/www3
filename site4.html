@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Płuciennik">
+    <meta name="description" content="Bezpieczeństwo w kontakcie z pszczołami, ochrona przed opryskami oraz wykresy danych pszczelarskich w Chart.js.">
+    <meta name="keywords" content="bezpieczeństwo, użądlenie pszczoły, opryski, ochrona pszczół, wykresy Chart.js">
+    <title>Bezpieczeństwo, Ochrona i Statystyki</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <div class="brand">
+                <a href="index.html" class="logo">🐝 Bezpieczeństwo i Statystyki</a>
+                <p class="slogan">Jak chronić pszczoły i bezpiecznie z nimi współistnieć</p>
+            </div>
+
+            <button id="menu-toggle" aria-label="Otwórz lub zamknij menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="index.html" class="nav-link">Główna</a></li>
+            <li><a href="site1.html" class="nav-link">Pszczoły (Wikipedia)</a></li>
+            <li><a href="site2.html" class="nav-link">Hodowla i Galeria</a></li>
+            <li><a href="site3.html" class="nav-link">Formalności i Mapa</a></li>
+            <li><a href="site4.html" class="nav-link active">Bezpieczeństwo i Wykresy</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <!-- wykresy Chart.js -->
+        <section class="card">
+            <h1 class="sekcja-tytul">Dane i statystyki pszczelarskie</h1>
+        
+
+            <div class="wykresy-kontener">
+                <div class="wykres-box">
+                    <h3>Główne zagrożenia dla populacji pszczół</h3>
+                    <canvas id="wykresStatyczny"></canvas>
+                </div>
+
+                <div class="wykres-box">
+                    <h3>Roczna produkcja miodu w pasiekach</h3>
+                    <canvas id="wykresDynamiczny"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <main class="kolumny">
+            <section class="card kolumna">
+                <img src="assets/img/uzadlenie.jpg" alt="Pierwsza pomoc po użądleniu">
+                <h2>1. Użądlenie – co robić?</h2>
+                <p>
+                    <strong>Pierwsza pomoc</strong><br>
+                    Pszczoła zostawia w skórze żądło z woreczkiem jadowym – zeskrob je paznokciem lub kartą, nie ściskając palcami. Przyłóż zimny okład. W razie obrzęku twarzy, duszności lub zawrotów głowy natychmiast wezwij pogotowie (112).
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/gatunki.jpg" alt="Porównanie pszczoły, osy i szerszenia">
+                <h2>2. Pszczoła, osa czy szerszeń?</h2>
+                <p>
+                    <strong>Rozpoznaj gatunek</strong><br>
+                    Pszczoła miodna jest krępa, owłosiona i brązowo-złota; nie interesuje się słodkimi napojami ani mięsem. Osa jest gładka, jaskrawo żółto-czarna z wyraźnym przewężeniem w talii, a szerszeń jest od niej znacznie większy i ma rudawe ubarwienie.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/roj.jpg" alt="Rój pszczół na gałęzi drzewa">
+                <h2>3. Napotkany rój</h2>
+                <p>
+                    <strong>Co robić z rojem?</strong><br>
+                    Pszczoły w roju wiszącym na gałęzi są zazwyczaj najedzone miodem i spokojne, bo szukają nowego domu. Zachowaj dystans, nie polewaj ich wodą ani nie strącaj – skontaktuj się z lokalnym pszczelarzem lub kołem pszczelarskim, które bezpiecznie go zbierze.
+                </p>
+            </section>
+        </main>
+
+        <section class="card">
+            <h2 class="sekcja-tytul">Opryski rolnicze a pszczoły – dobre praktyki</h2>
+            <div class="flex-sekcje">
+                <div>
+                    <h3>Dla rolników i ogrodników</h3>
+                    <p>
+                        Zabiegi środkami ochrony roślin wykonuj wyłącznie wieczorem po zakończeniu oblotu pszczół (najlepiej po zachodzie słońca), przy bezwietrznej pogodzie. Unikaj oprysków w okresie kwitnienia roślin uprawnych i chwastów w międzyrzędziach.
+                    </p>
+                </div>
+                <div>
+                    <h3>Reagowanie na łamanie prawa</h3>
+                    <p>
+                        Wykonywanie oprysków toksycznych dla pszczół w godzinach ich aktywności jest wykroczeniem. Takie zdarzenia oraz podejrzenie wytrucia rodzin pszczelich należy niezwłocznie zgłosić do Państwowej Inspekcji Ochrony Roślin i Nasiennictwa (PIORiN) oraz urzędu gminy.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-kontakt">
+                <li><strong>Adres:</strong> ul. Miodowa 12, 40-001 Katowice</li>
+                <li><strong>E-mail:</strong> <a href="mailto:kontakt@ochronapszczol.pl">kontakt@ochronapszczol.pl</a></li>
+            </ul>
+            <div class="copyright">© 2026 Ochrona Pszczół – Projekt edukacyjny</div>
+        </div>
+    </footer>
+
+    <!-- biblioteka Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

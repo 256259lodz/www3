@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Płuciennik">
+    <meta name="description" content="Podstawy hodowli pszczół, zakładanie pasieki, kalendarz prac oraz interaktywna galeria zdjęć pasiecznych.">
+    <meta name="keywords" content="hodowla pszczół, pasieka, ule, pszczelarz, galeria pasiek">
+    <title>Hodowla i Pasieka – Od czego zacząć?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <div class="brand">
+                <a href="index.html" class="logo">🐝 Hodowla i Pasieka</a>
+                <p class="slogan">Praktyczny przewodnik początkującego pszczelarza</p>
+            </div>
+
+            <button id="menu-toggle" aria-label="Otwórz lub zamknij menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="index.html" class="nav-link">Główna</a></li>
+            <li><a href="site1.html" class="nav-link">Pszczoły (Wikipedia)</a></li>
+            <li><a href="site2.html" class="nav-link active">Hodowla i Galeria</a></li>
+            <li><a href="site3.html" class="nav-link">Formalności i Mapa</a></li>
+            <li><a href="site4.html" class="nav-link">Bezpieczeństwo i Wykresy</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <section class="card">
+            <h1 class="sekcja-tytul">Kim jest współczesny pszczelarz?</h1>
+            <p class="sekcja-opis">
+                Współczesne pszczelarstwo to nie tylko pozyskiwanie miodu, ale przede wszystkim odpowiedzialna opieka nad rodzinami pszczelimi, dbanie o ich zdrowie, higienę uli oraz zapewnienie zróżnicowanej bazy pożytkowej w najbliższym otoczeniu.
+            </p>
+        </section>
+
+        <!-- Interaktywna galeria zdjęć -->
+        <section class="card">
+            <h2 class="sekcja-tytul">Galeria z życia pasieki</h2>
+            <p class="sekcja-opis">
+                Najedź kursorem na galerię, aby wstrzymać animację, lub skorzystaj z przycisków przewijania:
+            </p>
+
+            <div id="galeriaOkno" class="galeria-okno">
+                <div id="galeriaPasek" class="galeria-pasek animacja-ruch">
+                    <figure class="galeria-slajd">
+                        <img src="assets/img/galeria-1.jpg" alt="Drewniane ule w kwitnącym sadzie">
+                        <figcaption>1. Ule w wiosennym sadzie</figcaption>
+                    </figure>
+                    <figure class="galeria-slajd">
+                        <img src="assets/img/galeria-2.jpg" alt="Ramka z zasklepionym miodem">
+                        <figcaption>2. Ramka z dojrzałym miodem</figcaption>
+                    </figure>
+                    <figure class="galeria-slajd">
+                        <img src="assets/img/galeria-3.jpg" alt="Przegląd rodziny pszczelej">
+                        <figcaption>3. Przegląd rodziny w pasiece</figcaption>
+                    </figure>
+                    <figure class="galeria-slajd">
+                        <img src="assets/img/galeria-4.jpg" alt="Pszczoły na kwitnącej facelii">
+                        <figcaption>4. Pożytek na polu facelii</figcaption>
+                    </figure>
+                    <figure class="galeria-slajd">
+                        <img src="assets/img/galeria-5.jpg" alt="Królowa matka pszczela na plastrze">
+                        <figcaption>5. Matka pszczela na plastrze</figcaption>
+                    </figure>
+                    <figure class="galeria-slajd">
+                        <img src="assets/img/galeria-6.jpg" alt="Świeży miód w szklanych słoikach">
+                        <figcaption>6. Zbiór i rozlewanie miodu</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="przyciski-wiersz">
+                <button id="galeriaLewo" class="btn">◀ Przewiń w lewo</button>
+                <button id="galeriaPrawo" class="btn">Przewiń w prawo ▶</button>
+                <button id="galeriaAuto" class="btn btn-eco">⏸ Zatrzymaj animację</button>
+            </div>
+        </section>
+
+        <main class="kolumny">
+            <section class="card kolumna">
+                <img src="assets/img/pasieczysko.jpg" alt="Stanowisko pod pasiekę">
+                <h2>1. Stanowisko pod pasiekę</h2>
+                <p>
+                    <strong>Gdzie postawić ule?</strong><br>
+                    Wybierz miejsce zaciszne, osłonięte od północnych wiatrów i lekko nasłonecznione (najlepiej z porannym słońcem i popołudniowym półcieniem). Wylotki uli ustawia się zwykle w kierunku południowo-wschodnim.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/ekwipunek.jpg" alt="Podstawowe narzędzia pszczelarza">
+                <h2>2. Ekwipunek pszczelarza</h2>
+                <p>
+                    <strong>Niezbędne narzędzia</strong><br>
+                    Na początek wystarczą: kapelusz z siatką lub bluza pszczelarska, dłuto pasieczne do rozdzielania ramek, podkurzacz uspokajający owady, zmiotka do delikatnego usuwania pszczół z plastrów oraz rękawice.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <img src="assets/img/odklad.jpg" alt="Pierwsza rodzina pszczela - odkład">
+                <h2>3. Pierwsza rodzina</h2>
+                <p>
+                    <strong>Skąd wziąć pszczoły?</strong><br>
+                    Najbezpieczniej rozpocząć od 2–3 odkładów kupionych w maju lub czerwcu ze sprawdzonej, zdrowej pasieki hodowlanej. Łagodne linie pszczoły kraińskiej doskonale nadają się do nauki pierwszych przeglądów.
+                </p>
+            </section>
+        </main>
+
+        <section class="card">
+            <h2 class="sekcja-tytul">Sezonowy kalendarz prac pszczelarza</h2>
+            <div class="flex-sekcje">
+                <div>
+                    <h3>Wiosna</h3>
+                    <p>Pierwszy oblot oczyszczający, ocena zapasów pokarmu, poszerzanie gniazda węzą oraz kontrola rozwoju czerwiu.</p>
+                </div>
+                <div>
+                    <h3>Lato</h3>
+                    <p>Zapobieganie rójce, nakładanie korpusów miodni, miodobrania (rzepak, akacja, lipa) i przygotowanie do leczenia warrozy.</p>
+                </div>
+                <div>
+                    <h3>Jesień</h3>
+                    <p>Układanie gniazd do zimowli, zakarmianie rodzin syropem cukrowym lub inwertem oraz zabezpieczenie wylotków przed gryzoniami.</p>
+                </div>
+                <div>
+                    <h3>Zima</h3>
+                    <p>Spokój w pasiece, okazjonalne osłuchiwanie uli, czyszczenie sprzętu, drutowanie nowych ramek i planowanie kolejnego sezonu.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-kontakt">
+                <li><strong>Adres:</strong> ul. Miodowa 12, 40-001 Katowice</li>
+                <li><strong>E-mail:</strong> <a href="mailto:kontakt@ochronapszczol.pl">kontakt@ochronapszczol.pl</a></li>
+            </ul>
+            <div class="copyright">© 2026 Ochrona Pszczół – Projekt edukacyjny</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

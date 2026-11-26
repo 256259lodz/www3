@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Płuciennik">
+    <meta name="description" content="Formalności i przepisy prawne dla pszczelarzy, rejestr pasiek z JSON, aktualna pogoda Open-Meteo oraz mapa Leaflet.">
+    <meta name="keywords" content="rejestracja pasieki, RHD, PLW, pogoda dla pszczół, mapa pasiek, Leaflet">
+    <title>Formalności, Rejestr Pasiek i Mapa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Biblioteka Leaflet CSS (Ćwiczenie 8) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <div class="brand">
+                <a href="index.html" class="logo">🐝 Formalności i Mapa Pasiek</a>
+                <p class="slogan">Przepisy prawne, pogoda dla lotów pszczół i mapa polskich pasiek</p>
+            </div>
+
+            <button id="menu-toggle" aria-label="Otwórz lub zamknij menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="index.html" class="nav-link">Główna</a></li>
+            <li><a href="site1.html" class="nav-link">Pszczoły (Wikipedia)</a></li>
+            <li><a href="site2.html" class="nav-link">Hodowla i Galeria</a></li>
+            <li><a href="site3.html" class="nav-link active">Formalności i Mapa</a></li>
+            <li><a href="site4.html" class="nav-link">Bezpieczeństwo i Wykresy</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <!-- json + Open-Meteo -->
+        <section class="card">
+            <h1 class="sekcja-tytul">Rejestr Pasiek i Pogoda</h1>
+            <p class="sekcja-opis">
+                Kliknij wybraną pasiekę z listy poniżej, aby sprawdzić aktualne warunki pogodowe dla lotów pszczół, 3-dniową prognozę oraz jej lokalizację na mapie:
+            </p>
+
+            <div class="pasieki-uklad">
+                <div class="pasieki-lista-kolumna">
+                    <ul id="listaPasiek"></ul>
+                </div>
+
+                <div class="pasieki-szczegoly-kolumna">
+                    <div id="pogoda" class="pogoda-box">
+                        <p>Wybierz pasiekę z listy obok, aby pobrać aktualną pogodę i wyświetlić jej dane.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- interaktywna mapa leaflet -->
+        <section class="card">
+            <h2 class="sekcja-tytul">Interaktywna mapa pasiek</h2>
+            <p class="sekcja-opis">
+                Po kliknięciu pasieki na liście powyżej mapa automatycznie wyśrodkuje widok na jej współrzędnych i wyświetli znacznik ze szczegółami.
+            </p>
+            <div id="mapa"></div>
+        </section>
+
+        <main class="kolumny">
+            <section class="card kolumna">
+                <h2>1. Przepisy sąsiedzkie</h2>
+                <p>
+                    <strong>Lokalizacja wg prawa</strong><br>
+                    Ule powinny stać w odległości minimum 10 m od uczęszczanych dróg publicznych i budynków mieszkalnych sąsiadów. Odległość tę można zmniejszyć do 3 m, jeśli zastosuje się szczelną przeszkodę (np. żywopłot lub parkan) o wysokości co najmniej 3 metrów.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <h2>2. RHD i sprzedaż</h2>
+                <p>
+                    <strong>Rolniczy Handel Detaliczny</strong><br>
+                    Pszczelarz chcący legalnie sprzedawać miód, pyłek czy propolis bezpośrednio konsumentom powinien zarejestrować działalność w ramach RHD lub Sprzedaży Bezpośredniej u Powiatowego Lekarza Weterynarii (PLW) na 30 dni przed rozpoczęciem sprzedaży.
+                </p>
+            </section>
+
+            <section class="card kolumna">
+                <h2>3. Wymogi PLW / Sanepidu</h2>
+                <p>
+                    <strong>Rejestracja pasieki</strong><br>
+                    Każda pasieka — nawet posiadająca zaledwie jeden ul na własny użytek — podlega obowiązkowi zgłoszenia do Powiatowego Lekarza Weterynarii i nadaniu weterynaryjnego numeru identyfikacyjnego (WNI) ze względu na kontrolę chorób zakaźnych pszczół.
+                </p>
+            </section>
+        </main>
+
+        <section class="card card-highlight">
+            <h2 class="sekcja-tytul">Dotacje i programy wsparcia pszczelarstwa</h2>
+            <p class="sekcja-opis">
+                Pszczelarze posiadający numer EP (Ewidencja Producentów w ARiMR) oraz weterynaryjny numer identyfikacyjny mogą ubiegać się o refundację zakupu matek pszczelich, odkładów, leków przeciw warrozie oraz nowoczesnego sprzętu pasiecznego w ramach Planu Strategicznego dla Wspólnej Polityki Rolnej.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-kontakt">
+                <li><strong>Adres:</strong> ul. Miodowa 12, 40-001 Katowice</li>
+                <li><strong>E-mail:</strong> <a href="mailto:kontakt@ochronapszczol.pl">kontakt@ochronapszczol.pl</a></li>
+            </ul>
+            <div class="copyright">© 2026 Ochrona Pszczół – Projekt edukacyjny</div>
+        </div>
+    </footer>
+
+    <!-- biblioteka leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
