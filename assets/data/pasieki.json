@@ -1,0 +1,68 @@
+[
+  {
+    "nazwa": "Pasieka Sądecka Bartnik",
+    "wojewodztwo": "małopolskie",
+    "miejscowosc": "Stróże",
+    "lat": 49.6694,
+    "lon": 20.9614,
+    "pozytek": "Spadź iglasta i kwiaty górskie",
+    "liczbaUli": 180,
+    "produkcjaMioduKg": 3200,
+    "opis": "Jedna z najbardziej rozpoznawalnych pasiek w Beskidach, otoczona lasami jodłowymi i łąkami kwietnymi."
+  },
+  {
+    "nazwa": "Pasieka Puszczańska",
+    "wojewodztwo": "podlaskie",
+    "miejscowosc": "Hajnówka",
+    "lat": 52.7433,
+    "lon": 23.5812,
+    "pozytek": "Lipa drobnolistna i wielokwiat leśny",
+    "liczbaUli": 110,
+    "produkcjaMioduKg": 2150,
+    "opis": "Pasieka zlokalizowana na skraju Puszczy Białowieskiej, słynąca z aromatycznego miodu lipowego."
+  },
+  {
+    "nazwa": "Pasieka Roztoczańska Złoty Ulik",
+    "wojewodztwo": "lubelskie",
+    "miejscowosc": "Zwierzyniec",
+    "lat": 50.6119,
+    "lon": 22.9667,
+    "pozytek": "Gryka, facelia i malina leśna",
+    "liczbaUli": 145,
+    "produkcjaMioduKg": 2840,
+    "opis": "Rodzinne gospodarstwo pasieczne na Roztoczu specjalizujące się w miodach gryczanych i faceliowych."
+  },
+  {
+    "nazwa": "Pasieka Kaszubskie Wrzosy",
+    "wojewodztwo": "pomorskie",
+    "miejscowosc": "Kościerzyna",
+    "lat": 54.1221,
+    "lon": 17.9815,
+    "pozytek": "Wrzos, rzepak i akacja",
+    "liczbaUli": 95,
+    "produkcjaMioduKg": 1680,
+    "opis": "Położona wśród jezior i wrzosowisk pasieka wędrowna, produkująca ceniony miód wrzosowy."
+  },
+  {
+    "nazwa": "Pasieka Dolina Baryczy",
+    "wojewodztwo": "dolnośląskie",
+    "miejscowosc": "Milicz",
+    "lat": 51.5284,
+    "lon": 17.2712,
+    "pozytek": "Akacja, nawłoć i łąki nadrzeczne",
+    "liczbaUli": 130,
+    "produkcjaMioduKg": 2490,
+    "opis": "Pasieka na terenie parku krajobrazowego, korzystająca z czystych terenów podmokłych i starych alei lipowych."
+  },
+  {
+    "nazwa": "Pasieka Jurajska Miododajnia",
+    "wojewodztwo": "śląskie",
+    "miejscowosc": "Olsztyn k. Częstochowy",
+    "lat": 50.7495,
+    "lon": 19.2683,
+    "pozytek": "Nostrzyk, mniszek i lipa",
+    "liczbaUli": 85,
+    "produkcjaMioduKg": 1520,
+    "opis": "Ekologiczna pasieka na Jurze Krakowsko-Częstochowskiej, prowadząca również warsztaty edukacyjne."
+  }
+]
